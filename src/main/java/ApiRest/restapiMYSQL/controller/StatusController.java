@@ -4,10 +4,11 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class statusController {
+public class StatusController {
 
     @GetMapping(path = "/api/status")
-    public String checkStatus(){
-        return "Online.";
+    public String check(){
+        return String.format("Application is online.");
     }
+
 }
